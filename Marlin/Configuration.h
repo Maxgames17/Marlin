@@ -689,9 +689,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  24.67
-    #define DEFAULT_Ki   1.88
-    #define DEFAULT_Kd  81.09
+    #define DEFAULT_Kp  13.72
+    #define DEFAULT_Ki   1.79
+    #define DEFAULT_Kd  26.35
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -1513,7 +1513,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -39.8, -09.8, -0.64 }
+#define NOZZLE_TO_PROBE_OFFSET { -39.8, -09.8, -0.55 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
