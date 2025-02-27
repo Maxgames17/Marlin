@@ -2603,9 +2603,9 @@
 //=============================================================================
 // @section lcd
 
-#define ST7920_DELAY_1 DELAY_NS(200) // After CLK LOW
-#define ST7920_DELAY_2 DELAY_NS(400) // After DAT
-#define ST7920_DELAY_3 DELAY_NS(200) // After CLK HIGH
+#define ST7920_DELAY_1 DELAY_NS(400) // After CLK LOW
+#define ST7920_DELAY_2 DELAY_NS(800) // After DAT
+#define ST7920_DELAY_3 DELAY_NS(400) // After CLK HIGH
 
 //
 // RepRapDiscount Smart Controller.
