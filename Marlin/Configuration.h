@@ -704,6 +704,9 @@
  * better responsiveness and stability than PID and removes the need for PID_EXTRUSION_SCALING
  * and PID_FAN_SCALING. Use M306 T to autotune the model.
  * @section mpctemp
+ * 
+ * M306 T S1 P47 H0.00515
+ * M306 T S1 P50.5 H0.0056
  */
 #if ENABLED(MPCTEMP)
   //#define MPC_EDIT_MENU                             // Add MPC editing to the "Advanced Settings" menu. (~1.3K bytes of flash)
@@ -1513,7 +1516,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -39.8, -09.8, -1.40 }
+#define NOZZLE_TO_PROBE_OFFSET { -39.8, -09.8, -1.0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
