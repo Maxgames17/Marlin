@@ -776,9 +776,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
-  #define DEFAULT_bedKp 50.71
-  #define DEFAULT_bedKi 9.88
-  #define DEFAULT_bedKd 173.43
+  // Creality Ender-3 Pro
+  #define DEFAULT_bedKp 40.48
+  #define DEFAULT_bedKi 7.91
+  #define DEFAULT_bedKd 138.09
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1321,7 +1322,7 @@
  *    - Normally-closed (NC) also connect to GND.
  *    - Normally-open (NO) also connect to 5V.
  */
-//#define Z_MIN_PROBE_PIN -1
+//#define Z_MIN_PROBE_PIN PC2
 
 /**
  * Probe Type
@@ -3266,20 +3267,20 @@
 // Use software PWM to drive the fan, as for the heaters. This uses a very low frequency
 // which is not as annoying as with the hardware PWM. On the other hand, if this frequency
 // is too low, you should also increment SOFT_PWM_SCALE.
-#define FAN_SOFT_PWM
+//#define FAN_SOFT_PWM
 
 // Incrementing this by 1 will double the software PWM frequency,
 // affecting heaters, and the fan if FAN_SOFT_PWM is enabled.
 // However, control resolution will be halved for each increment;
 // at zero value, there are 128 effective control positions.
 // :[0,1,2,3,4,5,6,7]
-#define SOFT_PWM_SCALE 1
+//#define SOFT_PWM_SCALE 1
 
 // If SOFT_PWM_SCALE is set to a value higher than 0, dithering can
 // be used to mitigate the associated resolution loss. If enabled,
 // some of the PWM cycles are stretched so on average the desired
 // duty cycle is attained.
-#define SOFT_PWM_DITHER
+//#define SOFT_PWM_DITHER
 
 // @section extras
 
